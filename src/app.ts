@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 const postsRoute = require('./routes/post.router');
+const convertRoute = require('./routes/convert.router');
+
 
 dotenv.config();
 
@@ -17,6 +19,7 @@ export const getApp = (): Express => {
     app.use(cors());
 
     app.use('/posts', postsRoute);
+    app.use('/convert', convertRoute);
 
     return app;
 }

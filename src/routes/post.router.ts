@@ -1,4 +1,4 @@
-import express, { Express } from 'express';
+import express from 'express';
 import { postController } from "../api/post.controller";
 
 const postsRouter = express.Router();
