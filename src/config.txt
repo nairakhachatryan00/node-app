@@ -1,0 +1,5 @@
+user.name=Naira
+user.id=123456
+user.birthday.day=30
+user.birthday.month=6
+user.birthday.year=1993

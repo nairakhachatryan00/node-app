@@ -1,5 +1,5 @@
-import { getApp, PORT } from './app';
-
+import { getApp } from './app';
+const PORT = process.env.PORT || 3001;
 const server = () => {
     const app = getApp();
     app.listen(PORT, () => {

@@ -1,6 +1,8 @@
 version: '3.6'
 services:
-  node:
-    build: ./node-app
+  node-spp:
+    build: .
     ports:
-      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - ./src:/node-app/src
